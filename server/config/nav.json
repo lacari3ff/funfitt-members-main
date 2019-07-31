@@ -9,16 +9,16 @@
       "url": "/"
     },
     {
-      "title": "PAGE LAYOUTS",
-      "url": "/"
+      "title": "LOG IN",
+      "url": "/signin"
     },
     {
-      "title": "PAGE TEMPLATES",
-      "url": "/"
+      "title": "REGISTER",
+      "url": "/signup"
     },
     {
       "title": "CONTACT",
-      "url": "/"
+      "url": "/contact"
     }
   ],
   "bottom": [

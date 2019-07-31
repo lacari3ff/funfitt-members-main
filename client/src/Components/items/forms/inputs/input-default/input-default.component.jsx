@@ -16,7 +16,7 @@ export default class InputDefault extends Component {
           {this.props.placeholder}
           {this.required()}
         </p>
-        <input onChange={this.props.onChange} />
+        <input type={this.props.type} onChange={this.props.onChange} />
       </div>
     );
   }

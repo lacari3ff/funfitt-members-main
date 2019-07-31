@@ -1,0 +1,27 @@
+.nav-top {
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-bottom {
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-banner {
+  padding: 36px;
+  border-bottom: 3px solid #050505;
+}
+
+.nav-banner > span:nth-child(1) > h1 {
+  font-size: 46px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-banner > span:nth-child(1) > p {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0;
+  margin-top: 6px;
+  color: #a8a8a8;
+  text-transform: uppercase;
+}

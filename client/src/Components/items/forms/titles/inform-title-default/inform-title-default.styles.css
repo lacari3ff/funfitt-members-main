@@ -1,0 +1,15 @@
+.inform-title-default > h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #050505;
+}
+
+.inform-title-default > hr {
+  border: none;
+  border-bottom: 1px solid #ff0000;
+}
+
+.inform-title-default {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
