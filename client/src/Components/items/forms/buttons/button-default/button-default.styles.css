@@ -1,0 +1,21 @@
+.button-default {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+
+  padding: 14px;
+  border-radius: 3px;
+  background-color: #050505;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: 0.15s;
+}
+
+.button-default:hover {
+  transition: 0.2s;
+  background-color: #ff0000;
+}
