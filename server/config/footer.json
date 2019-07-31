@@ -1,0 +1,83 @@
+[
+  {
+    "title": "Entertainment",
+    "sub": [
+      {
+        "title": "Celebrities",
+        "url": "/"
+      },
+      {
+        "title": "Movies",
+        "url": "/"
+      },
+      {
+        "title": "Television",
+        "url": "/"
+      }
+    ]
+  },
+  {
+    "title": "Sports",
+    "sub": [
+      {
+        "title": "Baseball",
+        "url": "/"
+      },
+      {
+        "title": "Basketball",
+        "url": "/"
+      },
+      {
+        "title": "Football",
+        "url": "/"
+      }
+    ]
+  },
+  {
+    "title": "Music",
+    "sub": [
+      {
+        "title": "Alternative",
+        "url": "/"
+      },
+      {
+        "title": "Country",
+        "url": "/"
+      },
+      {
+        "title": "Hip Hop",
+        "url": "/"
+      },
+      {
+        "title": "Rock & Roll",
+        "url": "/"
+      }
+    ]
+  },
+  {
+    "title": "Technology",
+    "sub": [
+      {
+        "title": "Cameras",
+        "url": "/"
+      },
+      {
+        "title": "Gadgets",
+        "url": "/"
+      }
+    ]
+  },
+  {
+    "title": "Politics",
+    "sub": [
+      {
+        "title": "Campaigns",
+        "url": "/"
+      },
+      {
+        "title": "Issues",
+        "url": "/"
+      }
+    ]
+  }
+]

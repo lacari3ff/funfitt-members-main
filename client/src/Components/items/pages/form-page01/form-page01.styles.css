@@ -1,0 +1,15 @@
+.form-page01 > h1 {
+  font-size: 36px;
+  color: #050505;
+  font-weight: bold;
+}
+
+.form-page01 > h2 {
+  font-size: 24px;
+  color: #050505;
+  font-weight: bold;
+}
+
+.form-page01 {
+  padding: 36px;
+}

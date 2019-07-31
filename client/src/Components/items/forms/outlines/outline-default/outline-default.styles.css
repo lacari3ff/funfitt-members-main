@@ -2,5 +2,5 @@
   padding: 18px;
   border: 1px solid #dddddd;
   display: block;
-  width: fit-content;
+  width: calc(100% - 36px);
 }

@@ -22,7 +22,6 @@
   background: none;
   border: none;
 
-  max-width: 300px;
   width: calc(100% - 16px);
   padding: 8px;
   background-color: #ffffff;
