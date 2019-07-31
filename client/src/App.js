@@ -10,13 +10,34 @@ import ButtonDefault from "./Components/items/forms/buttons/button-default/butto
 import LinkDefault from "./Components/items/forms/links/link-default/link-default.component";
 import FormPage01 from "./Components/items/pages/form-page01/form-page01.component";
 import Footer from "./Components/items/footer/footer.component";
+import Nav from "./Components/items/nav/nav.component";
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      content: null
+    };
+
+    this.getContent();
+  }
+
+  getContent() {
+    fetch("http://192.168.1.113:4000/render/get-full-page").then(data => {
+      data.json().then(json => {
+        console.log(json);
+        this.setState({ content: json });
+      });
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <Router>
           <Container>
+            <Nav content={this.state.content} />
             <FormPage01 h1="Funfitt Members" h2="Login">
               <OutlineDefault>
                 <InputDefault
@@ -30,7 +51,7 @@ class App extends Component {
                 </LinkDefault>
               </OutlineDefault>
             </FormPage01>
-            <Footer />
+            <Footer content={this.state.content} />
           </Container>
         </Router>
       </div>

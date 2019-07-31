@@ -1,0 +1,50 @@
+{
+  "top": [
+    {
+      "title": "HOME",
+      "url": "/"
+    },
+    {
+      "title": "SAMPLE PAGE",
+      "url": "/"
+    },
+    {
+      "title": "PAGE LAYOUTS",
+      "url": "/"
+    },
+    {
+      "title": "PAGE TEMPLATES",
+      "url": "/"
+    },
+    {
+      "title": "CONTACT",
+      "url": "/"
+    }
+  ],
+  "bottom": [
+    {
+      "title": "entertainment",
+      "url:": "/"
+    },
+    {
+      "title": "music",
+      "url:": "/"
+    },
+    {
+      "title": "politics",
+      "url:": "/"
+    },
+    {
+      "title": "sports",
+      "url:": "/"
+    },
+    {
+      "title": "technology",
+      "url:": "/"
+    },
+    {
+      "title": "our shop",
+      "url:": "/"
+    }
+  ]
+}

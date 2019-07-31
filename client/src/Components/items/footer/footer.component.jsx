@@ -3,28 +3,13 @@ import { Link } from "react-router-dom";
 
 import "./footer.styles.css";
 
+import ButtonDarkbg from "../forms/buttons/button-darkbg/button-darkbg.component";
+import InputDarkbg from "../forms/inputs/input-darkbg/input-darkbg.components";
+
 export default class Footer extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      content: null
-    };
-
-    this.getFooter();
-  }
-
-  getFooter() {
-    fetch("http://192.168.1.113:4000/render/get-full-page").then(footer => {
-      footer.json().then(json => {
-        this.setState({ content: json });
-      });
-    });
-  }
-
   mapFooter() {
-    if (this.state.content) {
-      return this.state.content.footer.map(sub => {
+    if (this.props.content) {
+      return this.props.content.footer.map(sub => {
         return (
           <figure key={sub.title} className="footer-fig">
             <h3>{sub.title}</h3>
@@ -46,7 +31,16 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <div className="footer-content">{this.mapFooter()}</div>
+        <div className="footer-content">
+          {this.mapFooter()}
+          <figure className="footer-fig">
+            <h3>NEWSLETTER</h3>
+            <form>
+              <InputDarkbg placeholder="Email address" />
+              <ButtonDarkbg>Subscribe</ButtonDarkbg>
+            </form>
+          </figure>
+        </div>
         <hr />
         <div className="footer-bottom">
           <p>

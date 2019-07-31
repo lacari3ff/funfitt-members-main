@@ -2,9 +2,14 @@
   background-color: #050505;
 }
 
+.footer-content {
+  text-align: center;
+}
+
 .footer-fig {
   display: inline-block;
   vertical-align: top;
+  text-align: left;
 }
 
 .footer-fig > h3 {
@@ -35,4 +40,28 @@
 .footer-fig > ul > li > a:hover {
   color: #ff0000;
   transition: 0.2s;
+}
+
+.footer > hr {
+  border: none;
+  margin: 0;
+  border-bottom: 1px solid #444444;
+}
+
+.footer-bottom {
+  padding: 24px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-bottom > p {
+  font-size: 14px;
+  color: #909090;
+  font-weight: normal;
+}
+
+.footer-bottom > p > a {
+  color: #afafaf;
+  text-decoration: none;
 }
