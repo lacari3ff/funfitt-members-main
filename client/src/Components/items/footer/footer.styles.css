@@ -1,0 +1,38 @@
+.footer {
+  background-color: #050505;
+}
+
+.footer-fig {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-fig > h3 {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-fig > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-fig > ul > li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.footer-fig > ul > li > a {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.footer-fig > ul > li > a:hover {
+  color: #ff0000;
+  transition: 0.2s;
+}

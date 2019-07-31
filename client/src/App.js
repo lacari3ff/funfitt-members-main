@@ -9,6 +9,7 @@ import OutlineDefault from "./Components/items/forms/outlines/outline-default/ou
 import ButtonDefault from "./Components/items/forms/buttons/button-default/button-default.component";
 import LinkDefault from "./Components/items/forms/links/link-default/link-default.component";
 import FormPage01 from "./Components/items/pages/form-page01/form-page01.component";
+import Footer from "./Components/items/footer/footer.component";
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
                 </LinkDefault>
               </OutlineDefault>
             </FormPage01>
+            <Footer />
           </Container>
         </Router>
       </div>
