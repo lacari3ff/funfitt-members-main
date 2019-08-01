@@ -1,0 +1,27 @@
+.button-default {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  margin-top: 12px;
+  margin-bottom: 5px;
+  background-color: #1bcca1;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 3px;
+  width: 100%;
+  padding: 12px;
+  transition: 0.15s;
+}
+
+.button-default:hover {
+  background-color: #1dddad;
+  transition: 0.2s;
+}
+
+.button-default:active {
+  background-color: #15a07d;
+  transition: 0.2s;
+  box-shadow: 0px 2px 8px inset rgba(0, 0, 0, 0.335);
+}

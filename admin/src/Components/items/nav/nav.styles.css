@@ -1,0 +1,14 @@
+.nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #233445;
+  width: 100px;
+  text-align: center;
+}
+
+.nav > ul {
+  list-style: none;
+  padding: 0;
+}

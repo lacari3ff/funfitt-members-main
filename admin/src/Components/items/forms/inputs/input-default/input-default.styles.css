@@ -7,7 +7,7 @@
   padding: 9px;
   border: 1px solid #dddddd;
   box-shadow: 0px 0px 4px inset rgba(0, 0, 0, 0.133);
-  width: 200px;
+  width: calc(100% - 18px);
   transition: 0.15s;
 }
 
