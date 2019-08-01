@@ -1,0 +1,36 @@
+.textarea-default {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.textarea-default > p {
+  font-size: 16px;
+  color: #3d3d3d;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.textarea-default > p > span {
+  color: #ff0000;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.textarea-default > textarea {
+  outline: none;
+  background: none;
+  border: none;
+
+  width: calc(100% - 16px);
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  box-shadow: 0px 0px 7px inset rgba(0, 0, 0, 0.09);
+}
+
+.textarea-default > textarea:focus {
+  outline: none;
+
+  border: 1px solid #050505;
+}

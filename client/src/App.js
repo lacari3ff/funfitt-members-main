@@ -16,6 +16,7 @@ import Nav from "./Components/items/nav/nav.component";
 import InlinePage01 from "./Components/items/pages/inline-page01/inline-page01.component";
 import InputBold from "./Components/items/forms/inputs/input-bold/input-bold.component";
 import TextareaBold from "./Components/items/forms/textareas/textarea-bold/textarea-bold.component";
+import Article01 from "./Components/items/articles/article01/article01.component";
 
 function Signin() {
   return (
@@ -79,7 +80,7 @@ class Contact extends Component {
         <InlinePage01 content={this.props.content}>
           <FormPage02
             h1="Contact"
-            p="Please fill out the form below and we will reply a.s.a.p."
+            p="Please fill out the form return and we will reply a.s.a.p."
           >
             <InputBold placeholder="Name" required={true} type="text" />
             <InputBold placeholder="Email" required={true} type="text" />
@@ -97,15 +98,22 @@ class Article extends Component {
     return (
       <div className="App">
         <InlinePage01 content={this.props.content}>
-          <FormPage02
-            h1="Contact"
-            p="Please fill out the form below and we will reply a.s.a.p."
-          >
-            <InputBold placeholder="Name" required={true} type="text" />
-            <InputBold placeholder="Email" required={true} type="text" />
-            <TextareaBold placeholder="Comments" required={true} />
-            <ButtonDefault>Submit form</ButtonDefault>
-          </FormPage02>
+          <Article01
+            article={{
+              title: "Hello",
+              cdate: "01 02 2007",
+              image:
+                "http://192.168.1.113:4000/uploads/sample-article-348x180.jpg",
+              content: `This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.`,
+              author: {
+                purl: "/",
+                fullname: "Luke Rieff"
+              }
+            }}
+          />
         </InlinePage01>
       </div>
     );
@@ -143,6 +151,12 @@ class App extends Component {
               path="/contact/"
               component={props => {
                 return <Contact content={this.state.content} />;
+              }}
+            />
+            <Route
+              path="/article/"
+              component={props => {
+                return <Article content={this.state.content} />;
               }}
             />
             <Route path="/signin/" component={Signin} />

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./button-text.styles.css";
+
 export default class ButtonText extends Component {
   render() {
     return (
