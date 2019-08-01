@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import SigninRoute from "./Components/routes/signin/signin.component";
 import ArticlesRoute from "./Components/routes/articles/articles.component";
+import CreateArticleRoute from "./Components/routes/create-article/create-article.component";
 
 import Nav from "./Components/items/nav/nav.component";
 
@@ -20,6 +21,12 @@ class Articles extends Component {
   }
 }
 
+class CreateArticle extends Component {
+  render() {
+    return <CreateArticleRoute />;
+  }
+}
+
 class App extends Component {
   render() {
     return (
@@ -28,6 +35,7 @@ class App extends Component {
           <Nav />
           <Route path="/signin" component={Signin} />
           <Route path="/admin/articles" component={Articles} />
+          <Route path="/admin/create-article" component={CreateArticle} />
         </Router>
       </div>
     );
