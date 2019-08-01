@@ -15,6 +15,7 @@ import InformTitleDefault from "./Components/items/forms/titles/inform-title-def
 import Nav from "./Components/items/nav/nav.component";
 import InlinePage01 from "./Components/items/pages/inline-page01/inline-page01.component";
 import InputBold from "./Components/items/forms/inputs/input-bold/input-bold.component";
+import TextareaBold from "./Components/items/forms/textareas/textarea-bold/textarea-bold.component";
 
 function Signin() {
   return (
@@ -71,16 +72,18 @@ function Signup() {
   );
 }
 
-function Contact() {
+function Contact(props) {
   return (
     <div className="App">
-      <InlinePage01>
+      <InlinePage01 content={this.props.content}>
         <FormPage02
           h1="Contact"
           p="Please fill out the form below and we will reply a.s.a.p."
         >
           <InputBold placeholder="Name" required={true} type="text" />
           <InputBold placeholder="Email" required={true} type="text" />
+          <TextareaBold placeholder="Comments" required={true} />
+          <ButtonDefault>Submit form</ButtonDefault>
         </FormPage02>
       </InlinePage01>
     </div>

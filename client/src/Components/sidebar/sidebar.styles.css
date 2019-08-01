@@ -1,5 +1,4 @@
 .sidebar {
   border-left: 1px solid #dddddd;
-  height: 100%;
-  padding: 12px;
+  height: calc(100%);
 }
