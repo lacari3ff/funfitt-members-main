@@ -21,7 +21,7 @@ module.exports.getPageLayout = (req, res) => {
       title: "This is a test",
       text: "This is a example of a react post.",
       url: "/posts/crap",
-      img: "http://192.168.1.113:4000/uploads/sample-article-348x180.jpg",
+      img: "http://84.30.192.217:4000/uploads/sample-article-348x180.jpg",
       other: [
         {
           title: "Example example 01",

@@ -103,7 +103,7 @@ class Article extends Component {
               title: "Hello",
               cdate: "01 02 2007",
               image:
-                "http://192.168.1.113:4000/uploads/sample-article-348x180.jpg",
+                "http://84.30.192.217:4000/uploads/sample-article-348x180.jpg",
               content: `This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
                 This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
                 This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
@@ -132,7 +132,7 @@ class App extends Component {
   }
 
   getContent() {
-    fetch("http://192.168.1.113:4000/render/get-full-page").then(data => {
+    fetch("http://84.30.192.217:4000/render/get-full-page").then(data => {
       data.json().then(json => {
         this.setState({ content: json });
       });
