@@ -1,0 +1,29 @@
+.nav-item {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  opacity: 0.6;
+  transition: 0.15s;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+  display: block;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  transition: 0.2s;
+  border-left: 2px solid #1bcca1;
+}
+
+.nav-item > a > img {
+  width: 32px;
+}
+
+.nav-item > a > p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
