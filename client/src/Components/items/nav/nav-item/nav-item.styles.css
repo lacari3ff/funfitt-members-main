@@ -11,6 +11,7 @@
   transition: 0.15s;
   display: block;
   text-transform: uppercase;
+  color: #050505;
 }
 
 .nav-item > a:hover {

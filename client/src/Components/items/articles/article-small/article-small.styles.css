@@ -1,0 +1,28 @@
+.article-small > img {
+  width: 100%;
+  max-width: 348px;
+}
+
+.article-small > h3 {
+  font-size: 20px;
+  color: #050505;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.article-small > p {
+  font-size: 14px;
+  color: #5f5f5f;
+  font-weight: lighter;
+}
+
+.article-small > p > span > a {
+  color: #ff0000;
+  text-decoration: none;
+  transition: 0.15s;
+}
+
+.article-small > p > span > a:hover {
+  transition: 0.2s;
+  color: #050505;
+}

@@ -9,8 +9,13 @@ export default class ArticleSmall extends Component {
       <div className="article-small">
         <img src={this.props.image} />
         <h3>{this.props.title}</h3>
-        <p>{this.props.text}</p>
-        <Link to={this.props.src}>[Read more...]</Link>
+        <p>
+          {this.props.text}
+          <span>
+            {" "}
+            <Link to={this.props.url}>[Read more...]</Link>
+          </span>
+        </p>
       </div>
     );
   }

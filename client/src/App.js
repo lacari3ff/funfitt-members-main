@@ -92,6 +92,26 @@ class Contact extends Component {
   }
 }
 
+class Article extends Component {
+  render() {
+    return (
+      <div className="App">
+        <InlinePage01 content={this.props.content}>
+          <FormPage02
+            h1="Contact"
+            p="Please fill out the form below and we will reply a.s.a.p."
+          >
+            <InputBold placeholder="Name" required={true} type="text" />
+            <InputBold placeholder="Email" required={true} type="text" />
+            <TextareaBold placeholder="Comments" required={true} />
+            <ButtonDefault>Submit form</ButtonDefault>
+          </FormPage02>
+        </InlinePage01>
+      </div>
+    );
+  }
+}
+
 class App extends Component {
   constructor() {
     super();
