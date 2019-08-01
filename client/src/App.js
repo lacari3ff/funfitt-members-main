@@ -12,6 +12,7 @@ import FormPage01 from "./Components/items/pages/form-page01/form-page01.compone
 import Footer from "./Components/items/footer/footer.component";
 import InformTitleDefault from "./Components/items/forms/titles/inform-title-default/inform-title-default.component";
 import Nav from "./Components/items/nav/nav.component";
+import InlinePage01 from "./Components/sidebar/sidebar.component";
 
 function Signin() {
   return (
@@ -68,6 +69,16 @@ function Signup() {
   );
 }
 
+function Contact() {
+  return (
+    <div className="App">
+      <InlinePage01>
+        <h1>Hi</h1>
+      </InlinePage01>
+    </div>
+  );
+}
+
 class App extends Component {
   constructor() {
     super();
@@ -96,6 +107,7 @@ class App extends Component {
             <Nav content={this.state.content} />
 
             <Route path="/signup/" component={Signup} />
+            <Route path="/contact/" component={Contact} />
             <Route path="/signin/" component={Signin} />
 
             <Footer content={this.state.content} />

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import SideBar from "../../../sidebar/sidebar-item/sidebar-item.component";
+
 export default class InlinePage01 extends Component {
   render() {
     return (

@@ -1,14 +1,14 @@
-import React, { COmponent } from "react";
+import React, { Component } from "react";
 
-import InputDefault from "../items/forms/inputs/input-default/input-default.component";
+import InputBlank from "../items/forms/inputs/input-blank/input-blank.components";
 import SideBarItem from "./sidebar-item/sidebar-item.component";
 
-export default class SideBar extends COmponent {
+export default class SideBar extends Component {
   render() {
     return (
       <div className="sidebar">
         <SideBarItem>
-          <InputBlank />
+          <InputBlank placeholder="Search this website" />
         </SideBarItem>
       </div>
     );
