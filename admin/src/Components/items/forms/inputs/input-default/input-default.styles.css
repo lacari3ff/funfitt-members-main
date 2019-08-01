@@ -1,0 +1,31 @@
+.input-default > input {
+  border: none;
+  outline: none;
+  background: none;
+
+  background-color: #fbfbfb;
+  padding: 9px;
+  border: 1px solid #dddddd;
+  box-shadow: 0px 0px 4px inset rgba(0, 0, 0, 0.133);
+  width: 200px;
+  transition: 0.15s;
+}
+
+.input-default > input:focus {
+  border: 1px solid #3369ff;
+  box-shadow: 0px 0px 3px #3369ff;
+  transition: 0.2s;
+}
+
+.input-default {
+  text-align: left;
+}
+
+.input-default > p {
+  font-size: 13px;
+  font-weight: normal;
+  color: #777777;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}

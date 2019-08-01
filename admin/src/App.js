@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import SigninRoute from "./Components/routes/signin/signin.component";
+
+import "./App.css";
 
 class Signin extends Component {
   render() {
@@ -12,9 +14,11 @@ class Signin extends Component {
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Route path="/signin" component={Signin} />
-      </Router>
+      <div className="App">
+        <Router>
+          <Route path="/signin" component={Signin} />
+        </Router>
+      </div>
     );
   }
 }
