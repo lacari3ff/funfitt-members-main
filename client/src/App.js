@@ -9,10 +9,12 @@ import OutlineDefault from "./Components/items/forms/outlines/outline-default/ou
 import ButtonDefault from "./Components/items/forms/buttons/button-default/button-default.component";
 import LinkDefault from "./Components/items/forms/links/link-default/link-default.component";
 import FormPage01 from "./Components/items/pages/form-page01/form-page01.component";
+import FormPage02 from "./Components/items/pages/form-page02/form-page02.component";
 import Footer from "./Components/items/footer/footer.component";
 import InformTitleDefault from "./Components/items/forms/titles/inform-title-default/inform-title-default.component";
 import Nav from "./Components/items/nav/nav.component";
-import InlinePage01 from "./Components/sidebar/sidebar.component";
+import InlinePage01 from "./Components/items/pages/inline-page01/inline-page01.component";
+import InputBold from "./Components/items/forms/inputs/input-bold/input-bold.component";
 
 function Signin() {
   return (
@@ -73,7 +75,13 @@ function Contact() {
   return (
     <div className="App">
       <InlinePage01>
-        <h1>Hi</h1>
+        <FormPage02
+          h1="Contact"
+          p="Please fill out the form below and we will reply a.s.a.p."
+        >
+          <InputBold placeholder="Name" required={true} type="text" />
+          <InputBold placeholder="Email" required={true} type="text" />
+        </FormPage02>
       </InlinePage01>
     </div>
   );

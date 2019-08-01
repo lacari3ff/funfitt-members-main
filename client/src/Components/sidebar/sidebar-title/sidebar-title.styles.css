@@ -1,0 +1,10 @@
+.sidebar-title > p {
+  font-size: 16px;
+  color: #050505;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.sidebar-title {
+  text-align: center;
+}
